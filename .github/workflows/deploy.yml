@@ -16,12 +16,7 @@ jobs:
       - name: Setup Node.js
         uses: actions/setup-node@v2
         with:
-          node-version: "16"
-
-      - name: Delete node_modules and package-lock.json
-        run: |
-          rm -rf node_modules
-          rm -f package-lock.json
+          node-version: "18.18.0" # Update Node.js version to 18.18.0 or higher
 
       - name: Install dependencies
         run: npm install
